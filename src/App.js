@@ -13,6 +13,14 @@ class App extends Component {
         ],
     };
 
+    constructor() {
+        super();
+    }
+
+    componentDidMount() {
+        
+    }
+
     handleDelete = (counterId) => {
         const counters = this.state.counters.filter((c) => c.id !== counterId);
         this.setState({ counters });
